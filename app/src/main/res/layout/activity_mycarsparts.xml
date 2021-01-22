@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mycarsparts">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_baro"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#360202"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/close_NUprofile22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="اغلاق"
+                    android:fontFamily="@font/din"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#fff"
+                    android:textSize="17sp"
+                    />
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mycrecycle"
+            android:layout_below="@id/app_baro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

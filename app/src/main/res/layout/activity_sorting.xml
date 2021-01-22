@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sorting">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_baro"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#920707"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/close_sorting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="اغلاق"
+                    android:fontFamily="@font/din"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#fff"
+                    android:textSize="17sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="فلترة"
+
+                    android:textColor="#fff"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/din"
+                    />
+                <TextView
+                    android:id="@+id/update_sorting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="إعادة البحث "
+                    android:fontFamily="@font/din"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#fff"
+                    android:textSize="17sp"
+                    android:freezesText="true"
+                    />
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:layout_below="@id/app_baro"
+        android:orientation="vertical"
+        android:layoutDirection="rtl"
+
+
+        >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:padding="20dp"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textColor="#000"
+                    android:text="الموقع "
+                    android:fontFamily="@font/din"
+                    android:layout_gravity="center"
+
+                    />
+                <Spinner
+                    android:id="@+id/sp_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    ></Spinner>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+            </LinearLayout>
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textColor="#000"
+                    android:text="السعر "
+                    android:fontFamily="@font/din"
+                    android:layout_gravity="center"
+
+                    />
+                <Spinner
+                    android:id="@+id/sp_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    ></Spinner>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+        <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textColor="#000"
+                    android:text="التقييم "
+                    android:fontFamily="@font/din"
+                    android:layout_gravity="center"
+
+                    />
+                <Spinner
+                    android:id="@+id/sp_rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    ></Spinner>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    
+    
+</RelativeLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".parts_items"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+
+    app:cardBackgroundColor="#A9000000"
+    app:contentPadding="20dp"
+    android:background="@drawable/engine"
+
+
+    >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        
+                <TextView
+                    android:id="@+id/product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="product Name"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/din"
+                    android:textColor="#ffffff"
+                    
+                    />
+                <ImageView
+                    android:id="@+id/img_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/product_name"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="10dp"
+
+                    />
+                <TextView
+                    android:id="@+id/descriptionprod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_product"
+                    android:text="Descriptions "
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/din"
+                    android:textColor="#ffffff"
+
+
+                    />
+                <TextView
+                    android:id="@+id/esem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/descriptionprod"
+                    android:layout_alignParentRight="true"
+                    android:text="اسم البائع :"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/din"
+
+
+                    />
+        <TextView
+            android:id="@+id/vendorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="محمد"
+
+
+            android:textColor="#5586C9"
+            android:fontFamily="@font/din"
+            android:layout_below="@id/descriptionprod"
+            android:layout_toLeftOf="@id/esem"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="0dp"
+            />
+        <TextView
+            android:id="@+id/addrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/esem"
+            android:layout_alignParentRight="true"
+            android:text="الموقع :"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/din"
+            android:layout_marginTop="13dp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/vendoraddres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vendorName"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@font/din"
+            android:layout_toLeftOf="@id/esem"
+            android:text="place"
+            android:textColor="#ffffff" />
+
+
+        <TextView
+            android:id="@+id/rakam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addrs"
+            android:layout_alignParentRight="true"
+            android:text="رقم الهاتف :"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/din"
+            android:layout_marginTop="13dp"
+
+            />
+        <TextView
+            android:id="@+id/vendorNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0795568221"
+            android:textColor="#ffffff"
+            android:layout_below="@id/vendoraddres"
+            android:layout_toLeftOf="@id/rakam"
+            android:fontFamily="@font/din"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="13dp"
+            />
+        <TextView
+            android:id="@+id/se3er"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vendorNum"
+            android:layout_alignParentRight="true"
+            android:text="سعر القطعة :"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/din"
+            android:layout_marginTop="13dp"
+
+            />
+        <TextView
+            android:id="@+id/myPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#0DE914"
+            android:fontFamily="@font/din"
+            android:layout_below="@id/vendorNum"
+            android:layout_toLeftOf="@id/se3er"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="13dp"
+            />
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/myPrice"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:textColor="#D7FFFFFF"
+
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/time"
+
+            android:layout_marginTop="20dp"
+            android:textColor="#D7FFFFFF"
+            android:layout_centerHorizontal="true"
+            >
+
+            <RatingBar
+                android:id="@+id/rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/RatingBar"
+                android:scaleX="0.6"
+                android:scaleY="0.9"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

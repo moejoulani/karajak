@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+
+    android:background="@drawable/sorbackground"
+    app:contentPadding="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl"
+        >
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layoutDirection="rtl"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اسم القطعة :"
+            android:fontFamily="@font/din"
+            android:layout_marginLeft="2dp"
+
+            />
+            <TextView
+                android:id="@+id/partnameV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="قشاط دينامو"
+                android:fontFamily="@font/din"
+
+                />
+        </LinearLayout>
+<!--________________________________________________________________________________________________________-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="نوع السيارة : "
+                android:fontFamily="@font/din"
+                android:layout_marginLeft="2dp"
+
+                />
+            <TextView
+                android:id="@+id/cartypeV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="مرسيدس"
+                android:fontFamily="@font/din"
+
+                />
+        </LinearLayout>
+
+        <!--________________________________________________________________________________________________________-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="فئة السيارة : "
+                android:fontFamily="@font/din"
+                android:layout_marginLeft="2dp"
+
+                />
+            <TextView
+                android:id="@+id/carseriesV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="CLK"
+                android:fontFamily="@font/din"
+
+                />
+        </LinearLayout>
+        <!--________________________________________________________________________________________________________-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="موديل السيارة : "
+                android:fontFamily="@font/din"
+                android:layout_marginLeft="2dp"
+
+                />
+            <TextView
+                android:id="@+id/carmodelV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="2009"
+                android:fontFamily="@font/din"
+
+                />
+        </LinearLayout>
+        <!--________________________________________________________________________________________________________-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" السعر : "
+                android:fontFamily="@font/din"
+                android:layout_marginLeft="2dp"
+
+                />
+            <TextView
+                android:id="@+id/priceV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="200"
+                android:textColor="#158A06"
+                android:fontFamily="@font/din"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+<!--___________________________________________________________________________________________________________-->
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imagepartV"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            tools:src="@drawable/bawaji"
+
+            />
+
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

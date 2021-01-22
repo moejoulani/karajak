@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vendorpartlist">
+
+    <TextView
+        android:id="@+id/listaa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="قائمة القطع المضافه "
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="#fff"
+        android:fontFamily="@font/din"
+        android:padding="17dp"
+        android:layout_alignParentRight="true"
+        android:background="#DA000000"
+
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recoo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/listaa"
+        android:layout_marginTop="20dp"
+        >
+
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

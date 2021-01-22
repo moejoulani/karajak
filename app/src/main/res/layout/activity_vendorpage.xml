@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".vendorpage">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbaro"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_height="55dp"
+        android:background="#F7720303"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:fitsSystemWindows="true"
+                >
+            <TextView
+                android:id="@+id/vend_close_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="أغلاق"
+                android:textSize="18dp"
+                android:fontFamily="@font/din"
+                android:textColor="#fff"
+
+                />
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:id="@+id/popi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appbaro"
+        >
+
+    <LinearLayout
+
+
+
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/vendorImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/profile"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+android:fitsSystemWindows="true"
+            />
+        <TextView
+            android:id="@+id/vendorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="محمد الجولاني"
+            android:textColor="#000"
+            android:fontFamily="@font/din"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+
+            />
+
+        <RatingBar
+            android:isIndicator="true"
+            android:id="@+id/getStars"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:scaleY="0.45"
+            android:scaleX="0.45"
+            android:numStars="5"
+            android:layout_marginTop="-12dp"
+            android:theme="@style/RatingBar"
+            />
+        <LinearLayout
+            android:id="@+id/callVend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl"
+            android:gravity="center"
+            android:layout_marginTop="-5dp"
+            android:layout_gravity="center"
+            >
+        <TextView
+            android:id="@+id/vendorPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="0797557275"
+            android:textColor="#000"
+            android:fontFamily="@font/din"
+            android:layout_gravity="center"
+        android:textSize="18dp"
+
+            />
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:src="@drawable/callicon2"
+                android:layout_marginRight="6dp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:id="@+id/goToLoc"
+            >
+       <!--     <TextView
+                android:id="@+id/goToLoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الذهاب الى الموقع "
+                android:fontFamily="@font/din"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#F5A4D38A"
+
+                />
+-->
+            <TextView
+                android:id="@+id/vendoraddres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="عبدون"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:fontFamily="@font/din"
+                android:layout_gravity="center"
+
+                />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:src="@drawable/locicon2"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Reccno"
+        android:layout_marginTop="20dp"
+        android:background="#0F2196F3"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+
+        android:layout_below="@id/popi"
+        >
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+android:id="@+id/w2"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/Reccno"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:rating="0"
+        android:progressBackgroundTint="#484B35"
+        android:stepSize="1.0"
+        android:id="@+id/rtt"
+        android:theme="@style/RatingBar"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+
+
+        />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="أكتب تعليقك"
+            android:fontFamily="@font/din"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/comment"
+            android:layout_height="120dp"
+            android:hint="اكتب رايك عن المتجر ......"
+            android:fontFamily="@font/din"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="أرسال"
+            android:fontFamily="@font/din"
+            android:id="@+id/comrat_submit"
+            android:layout_marginTop="6dp"
+            android:layout_marginHorizontal="30dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
+</androidx.core.widget.NestedScrollView>

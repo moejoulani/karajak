@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    app:cardBackgroundColor="#A9000000"
+    app:contentPadding="5dp"
+
+    tools:context=".ItemsList">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/My_esem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اسم القطعه : "
+            android:layout_alignParentRight="true"
+            android:textColor="#fff"
+            android:textSize="20dp"
+
+
+
+            />
+        <TextView
+            android:id="@+id/My_partname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moe joulani"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_toLeftOf="@+id/My_esem"
+            />
+        <TextView
+            android:id="@+id/My_noo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" نوع السيارة: "
+            android:layout_alignParentRight="true"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_below="@+id/My_esem"
+            android:layout_marginTop="10dp"
+
+
+
+            />
+        <TextView
+            android:id="@+id/My_carType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moe 2 Jou"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_toLeftOf="@id/My_noo3"
+            android:layout_below="@id/My_esem"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/My_fe2a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="فئة السيارة :  "
+            android:layout_alignParentRight="true"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_below="@+id/My_noo3"
+            android:layout_marginTop="10dp"
+
+
+            />
+        <TextView
+            android:id="@+id/My_carSeries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moe 3 Joulol"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_toLeftOf="@id/My_fe2a"
+            android:layout_below="@id/My_noo3"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/My_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="موديل السيارة : "
+            android:layout_alignParentRight="true"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_below="@+id/My_fe2a"
+            android:layout_marginTop="10dp"
+
+
+
+            />
+        <TextView
+            android:id="@+id/My_carModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moe 4 Joulolsss"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_toLeftOf="@id/My_year"
+            android:layout_below="@id/My_carSeries"
+            android:layout_marginTop="10dp"
+
+            />
+        <TextView
+            android:id="@+id/My_tare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="التاريخ :"
+            android:layout_alignParentRight="true"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_below="@+id/My_year"
+            android:layout_marginTop="10dp"
+
+
+
+            />
+        <TextView
+            android:id="@+id/My_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moe 4 Joulolsss"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_toLeftOf="@id/My_tare"
+            android:layout_below="@id/My_carModel"
+            android:layout_marginTop="10dp"
+
+            />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

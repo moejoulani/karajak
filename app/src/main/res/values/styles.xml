@@ -1,0 +1,62 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#F7720303</item>
+        <item name="colorPrimaryDark">#F7720303</item>
+        <item name="colorAccent">#F7720303</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="MySpinner" parent="Base.TextAppearance.AppCompat.Widget.TextView.SpinnerItem">
+        <item name="android:textSize">22dp</item>
+    </style>
+    <style name="myStyle" parent="Theme.AppCompat.Light.DarkActionBar"
+        >
+        <item name="colorPrimary">#F7720303</item>
+        <item name="colorPrimaryDark">#F7720303</item>
+        <item name="colorAccent">#F7720303</item>
+
+    </style>
+    <style name="AppTheme.CustomTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:background">#8BE7E3E3</item> <!-- Or any transparency or color you need -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+
+
+
+    </style>
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#A09B8D</item>
+        <item name="colorControlActivated">#FFC107</item>
+    </style>
+    <style name="AppTheme.CustomTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:background">#27E7E3E3</item> <!-- Or any transparency or color you need -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+
+
+
+    </style>
+<style name="myspinnerStyle" parent="@android:style/Widget.TextView.SpinnerItem">
+    <item name="android:fontFamily">@font/dimafont</item>
+    <item name="android:textColor">#fff</item>
+    <item name="android:textSize">30dp</item>
+    <item name="android:gravity">center</item>
+</style>
+
+</resources>

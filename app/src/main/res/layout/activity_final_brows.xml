@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+
+
+
+
+
+
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/sorbackground"
+       android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layoutDirection="rtl"
+
+        >
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="البحث عن : "
+        android:fontFamily="@font/din"
+        android:textSize="20dp"
+        android:textColor="#000"
+
+
+           />
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/go_to_filterpage"
+            >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="فلترة"
+            android:textColor="#B33333"
+            android:textSize="20dp"
+            android:fontFamily="@font/din"
+            android:layout_alignParentLeft="false"
+            android:layout_toRightOf="@+id/filterico"
+            />
+        <ImageView
+            android:id="@+id/filterico"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:src="@drawable/filter"
+            android:layout_alignParentLeft="true"
+            />
+    </RelativeLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="right"
+           android:gravity="right"
+           android:layoutDirection="rtl"
+           android:textDirection="rtl"
+           android:orientation="horizontal">
+           <TextView
+                android:id="@+id/fol1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               tools:text="سيارات"
+               android:fontFamily="@font/din"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text=">"
+               />
+
+           <TextView
+               android:id="@+id/fol2"
+
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               tools:text="محركات "
+               android:fontFamily="@font/din"
+
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text=">"
+               />
+
+       </LinearLayout>
+
+
+
+       </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".final_brows"
+    android:id="@+id/recycleview"
+    android:background="@drawable/pap"
+    >
+
+
+
+
+</androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

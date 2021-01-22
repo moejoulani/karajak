@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">468728931316-0um16tgg2p4f9sf6qlvg7cvkfjon056v.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://karaj-c9049.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">468728931316</string>
+    <string name="google_api_key" translatable="false">AIzaSyCs0eSpp5XSrQUgCBGtB6zMr4VhmSQZYNE</string>
+    <string name="google_app_id" translatable="false">1:468728931316:android:2eeb49931a63f5f0688fa1</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCs0eSpp5XSrQUgCBGtB6zMr4VhmSQZYNE</string>
+    <string name="google_storage_bucket" translatable="false">karaj-c9049.appspot.com</string>
+    <string name="project_id" translatable="false">karaj-c9049</string>
+</resources>

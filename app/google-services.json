@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "468728931316",
+    "firebase_url": "https://karaj-c9049.firebaseio.com",
+    "project_id": "karaj-c9049",
+    "storage_bucket": "karaj-c9049.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468728931316:android:2eeb49931a63f5f0688fa1",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "468728931316-pjsaubcsb76ouplen41ue35jcd4qhqeq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "2df88a93ba1f8de5e3314aa70ab25449aef94ac2"
+          }
+        },
+        {
+          "client_id": "468728931316-0um16tgg2p4f9sf6qlvg7cvkfjon056v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCs0eSpp5XSrQUgCBGtB6zMr4VhmSQZYNE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "468728931316-0um16tgg2p4f9sf6qlvg7cvkfjon056v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

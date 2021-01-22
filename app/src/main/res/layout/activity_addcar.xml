@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addcar">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_baro"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#009688"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/close_addcar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="اغلاق"
+                    android:fontFamily="@font/din"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#fff"
+                    android:textSize="17sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="إضافة نوع سيارتي"
+
+                    android:textColor="#fff"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/din"
+                    />
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_below="@+id/app_baro"
+        android:layout_width="match_parent"
+        android:layoutDirection="rtl"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="نوع السيارة"
+            android:fontFamily="@font/din"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            />
+        <Spinner
+            android:layout_marginTop="9dp"
+            android:id="@+id/no3cari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" فئة السيارة : "
+            android:fontFamily="@font/din"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            />
+        <Spinner
+            android:layout_marginTop="9dp"
+            android:id="@+id/fe2acari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="موديل السيارة : "
+            android:fontFamily="@font/din"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            />
+        <Spinner
+            android:layout_marginTop="9dp"
+            android:id="@+id/modelcari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:textColor="#000"
+            android:text="إضافة"
+            android:textSize="20dp"
+            android:fontFamily="@font/din"
+            android:layout_marginTop="20dp"
+            android:background="#009688"
+            android:id="@+id/addMyCarBtn"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="360dp"
+    android:layout_margin="10dp"
+
+
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mycname"
+        android:layout_gravity="center"
+        tools:text="قطعة واحد"
+        android:textSize="18dp"
+        android:fontFamily="@font/din"
+
+        />
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:id="@+id/mycimage"
+
+
+        />
+    <TextView
+        android:id="@+id/mycdesc"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        tools:text="قطعة واحد very good parts"
+        android:textSize="18dp"
+        android:fontFamily="@font/din"
+
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layoutDirection="rtl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اسم البائع : "
+            android:fontFamily="@font/din"
+            />
+        <TextView
+            android:id="@+id/mycvendname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/din"
+            tools:text="محمد الجولاني"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layoutDirection="rtl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" الموقع : "
+            android:fontFamily="@font/din"
+            />
+        <TextView
+            android:id="@+id/mycaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/din"
+            tools:text="عمان"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layoutDirection="rtl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" رقم الهاتف : "
+            android:fontFamily="@font/din"
+            />
+        <TextView
+            android:id="@+id/mycphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/din"
+            tools:text="0795572812"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layoutDirection="rtl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" السعر : "
+
+            android:fontFamily="@font/din"
+            />
+        <TextView
+            android:id="@+id/mycprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/din"
+            tools:text="30"
+            android:textColor="#0A680E"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

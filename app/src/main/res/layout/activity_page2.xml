@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".page2">
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_alignParentStart="true"
+
+        android:src="@drawable/kar" />
+
+    <!--<ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="206dp"
+        android:layout_marginTop="411dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="38dp"
+        android:contentDescription="@string/todo3"
+        app:srcCompat="@drawable/seller"
+        android:onClick="vendors"
+        />
+-->
+   <!-- <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="229dp"
+        android:layout_height="250dp"
+
+        app:srcCompat="@drawable/customer2"
+        android:onClick="showCategories"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />-->
+    <Button
+        android:id="@+id/id1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="استعراض الأقسام مباشرة "
+        android:fontFamily="@font/din"
+        android:layout_centerVertical="true"
+        android:textSize="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/button2ba"
+        android:textColor="#fff"
+        android:onClick="showCategories"
+        />
+    <TextView
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="أو"
+        android:fontFamily="@font/din"
+        android:layout_below="@id/id1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:textSize="20dp"
+        android:textColor="#000"
+
+
+        />
+    <Button
+        android:id="@+id/id2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="تسجيل الدخول"
+        android:fontFamily="@font/din"
+        android:layout_centerVertical="true"
+        android:textSize="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/button1ba"
+        android:textColor="#fff"
+        android:layout_below="@+id/b2"
+
+        android:layout_marginTop="4dp"
+        android:onClick="normalUser"
+
+        />
+
+  <!--  <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:onClick="roro"
+        140505
+        />
+
+-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="تسجيل الدخول كتاجر !"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/din"
+        android:textSize="18dp"
+        android:padding="5dp"
+        android:textDirection="rtl"
+        android:layout_alignParentRight="true"
+        android:onClick="vendors"
+        />
+</RelativeLayout>

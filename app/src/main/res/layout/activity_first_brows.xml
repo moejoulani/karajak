@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".first_brows"
+    android:background="#FFFFFF"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#25FFFFFF"
+    >
+    <RelativeLayout
+        android:id="@+id/topSi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F7720303"
+        android:padding="10dp"
+        >
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تسجيل الدخول"
+            android:fontFamily="@font/din"
+            android:background="@drawable/logbutton"
+            android:textColor="#F7720303"
+            android:padding="5dp"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NnameTop"
+            tools:text="محمد الجولاني"
+            android:textColor="#fff"
+            android:fontFamily="@font/din"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/loco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#68000000"
+        android:fontFamily="@font/din"
+        android:layout_below="@id/topSi"
+        android:padding="10dp"
+        android:text="اختر القسم : "
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loco"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        
+
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+
+
+            >
+
+            <LinearLayout
+                android:id="@+id/body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:onClick="bodyListView"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/body2"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/din"
+                    android:layoutDirection="rtl"
+                    android:text="قطع بودي"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mechanic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:orientation="vertical"
+                android:onClick="mechanicListView"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/carrepair" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/din"
+                    android:layoutDirection="rtl"
+                    android:text="قطع ميكانيك"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+
+                    
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/tires"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:onClick="tiresListView"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/wheel" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/din"
+                    android:layoutDirection="rtl"
+                    android:text="اطارات"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/electronic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:orientation="vertical"
+                android:onClick="electronicListView"
+                >
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/battery" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/din"
+                    android:layoutDirection="rtl"
+                    android:text="كهرباء السيارة"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+
+
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/oils"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:onClick="oilsListView"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/oil" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/din"
+                    android:layoutDirection="rtl"
+                    android:text="زيوت"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/accessories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:orientation="vertical"
+                android:onClick="accessoriesListView"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/access" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/din"
+                    android:layoutDirection="rtl"
+                    android:text="إكسسوارات"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+
+
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

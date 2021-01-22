@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setting">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_setting"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#001a4d"
+
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_bar_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#001a4d">
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:padding="10dp"
+                     >
+                     <TextView
+                         android:id="@+id/close_btn"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="اغلاق"
+                         android:fontFamily="@font/din"
+                         android:layout_alignParentStart="true"
+                         android:textColor="#fff"
+                         android:textSize="17sp"
+                         />
+                     <TextView
+                         android:id="@+id/update_btn"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="تحديث البيانات"
+                         android:fontFamily="@font/din"
+                         android:layout_alignParentEnd="true"
+                         android:textColor="#fff"
+                         android:textSize="17sp"
+                         />
+
+
+
+
+
+                 </RelativeLayout>
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setting_profile_image"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/profile"
+        android:layout_below="@id/app_bar_setting"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+
+        />
+    <TextView
+        android:id="@+id/profile_image_change_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_profile_image"
+        android:text="تغيير الصورة الشخصية"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:fontFamily="@font/din"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+
+        />
+    <EditText
+        android:id="@+id/settings_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image_change_btn"
+        android:hint="رقم الهاتف "
+
+        />
+    <EditText
+        android:id="@+id/settings_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings_phone_number"
+        android:hint="الاسم"
+
+        />
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/settings_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings_full_name"
+        android:hint="الموقع"
+
+        />
+
+    <Spinner
+        android:id="@+id/spinnerAddress"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/settings_address"
+        ></Spinner>
+
+<Button
+    android:id="@+id/fetchLocation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/spinnerAddress"
+    android:text="إضافة موقعي "
+    android:textSize="20dp"
+    android:fontFamily="@font/din"
+    android:layout_marginHorizontal="25dp"
+    android:background="#8BC34A"
+    android:layout_marginTop="23dp"
+
+    />
+
+</RelativeLayout>

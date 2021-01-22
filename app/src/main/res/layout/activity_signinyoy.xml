@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/passover"
+
+    tools:context=".signinyoy">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="تسجيل الدخول "
+        android:fontFamily="@font/din"
+        android:textSize="27dp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:background="#DFD6D6"
+        android:padding="10dp"
+        />
+    <EditText
+        android:id="@+id/normalUserPhone"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="رقم الهاتف "
+        android:textSize="20dp"
+        android:singleLine="true"
+
+        android:padding="10dp"
+        android:fontFamily="@font/din"
+        android:layout_marginHorizontal="25dp"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:background="#9C000000"
+        android:textColor="#fff"
+        android:textColorHint="#A6FFFFFF"
+        />
+    <EditText
+        android:id="@+id/normalUserPassword"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="كلمة السر "
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:fontFamily="@font/din"
+        android:layout_marginHorizontal="25dp"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:background="#9C000000"
+        android:textColor="#fff"
+        android:textColorHint="#A6FFFFFF"
+        />
+    <CheckBox
+        android:id="@+id/remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="تذكرني"
+        app:buttonTint="#AC2E19"
+        android:fontFamily="@font/din"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+
+        />
+    <Button
+        android:id="@+id/signInNor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#C4420404"
+        android:background="#B9F0EDED"
+        android:text="تسجيل الدخول"
+        android:fontFamily="@font/din"
+        android:textSize="20dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="أنشاء حساب جديد؟"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/din"
+        android:id="@+id/createNuser"
+        />
+</LinearLayout>

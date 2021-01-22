@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".spifirebase">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Please : "
+        android:textSize="20dp"
+        />
+    <Spinner
+        android:id="@+id/spin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        ></Spinner>
+
+    <TextView
+        android:id="@+id/please2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Please 2 : "
+        android:textSize="20dp"
+        android:layout_below="@+id/spin1"
+        android:layout_marginTop="20dp"
+
+        />
+
+    <Spinner
+        android:id="@+id/spin2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/please2"
+        >
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/please3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Please 3 : "
+        android:textSize="20dp"
+        android:layout_below="@+id/spin2"
+        android:layout_marginTop="20dp" />
+    <Spinner
+        android:id="@+id/spin3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/please3"
+        >
+
+    </Spinner>
+    <Button
+        android:id="@+id/m3_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GOO"
+        android:layout_below="@+id/spin3"
+
+        />
+
+</RelativeLayout>
